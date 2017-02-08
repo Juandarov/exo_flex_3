@@ -1,0 +1,67 @@
+body {
+    width: 70%;
+    height: 30em;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+nav, aside, main {
+    border: solid 2px #606060;
+    background-color: #a6a6a6;
+    padding: 2em;
+}
+
+nav {
+    width: 100%;
+    height: 2em;
+}
+
+.layout1 aside {
+    width: 25em;
+    align-self: flex-start;
+}
+
+.layout1 main {
+    flex-grow: 1;
+    height: 100%;
+}
+
+
+
+.layout2 aside {
+    width: 25em;
+}
+
+.layout2 main {
+    flex-grow: 1;
+    height: 100%;
+}
+
+
+.layout3 aside {
+    order: 2;
+    width: 25em;
+    align-self: flex-start;
+}
+
+.layout3 main {
+    order: 1;
+    flex-grow: 1;
+    height: 100%;
+}
+
+
+
+.layout4 aside {
+    order: 2;
+    width: 25em;
+}
+
+.layout4 main {
+    order: 1;
+    flex-grow: 1;
+    height: 100%;
+}
