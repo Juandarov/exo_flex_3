@@ -20,7 +20,7 @@ nav {
 }
 
 .layout1 aside {
-    width: 25em;
+    width: 20em;
     align-self: flex-start;
 }
 
@@ -32,7 +32,7 @@ nav {
 
 
 .layout2 aside {
-    width: 25em;
+    width: 20em;
 }
 
 .layout2 main {
@@ -43,7 +43,7 @@ nav {
 
 .layout3 aside {
     order: 2;
-    width: 25em;
+    width: 20em;
     align-self: flex-start;
 }
 
@@ -57,11 +57,49 @@ nav {
 
 .layout4 aside {
     order: 2;
-    width: 25em;
+    width: 20em;
 }
 
 .layout4 main {
     order: 1;
     flex-grow: 1;
     height: 100%;
+}
+
+
+@media (max-width: 1000px) {
+    body {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        flex-direction: column;
+    }
+    nav, {
+        width: auto;
+    }
+
+    .layout1 main, .layout1 aside {
+        height: auto;
+        width: auto;
+        align-self: auto;
+    }
+
+    .layout2 main, .layout2 aside {
+        height: auto;
+        width: auto;
+    }
+
+    .layout3 main, .layout3 aside {
+        height: auto;
+        width: auto;
+        align-self: auto;
+    }
+
+    .layout4 main, .layout4 aside {
+        height: auto;
+        width: auto;
+    }
 }
